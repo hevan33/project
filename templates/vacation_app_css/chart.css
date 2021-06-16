@@ -111,21 +111,13 @@ select{
   border: none;
 
 }
-
-
-
-
-
 .chart_div {
   display: grid;
   border: 2px solid grey;
   position: relative;
   overflow: hidden;  
   margin-top: 5vh;
-  
-  
-
-  
+   
 }
 .chart-row {
 display: grid;      
@@ -153,7 +145,7 @@ text-align: center;
 font-size: 13px;
 align-self: center;
 font-weight: bold;
-padding: 15px 0;    
+padding: 15px 3px;    
 color: grey;
 }
 .chart-lines > span {
@@ -193,57 +185,37 @@ position: relative;
 cursor: pointer;
 border-radius: 15px;
 }
-ul #chart-li-one {
-grid-column: 1/2; 
-background-color:#0080FF;
-}
-ul #chart-li-two {
-grid-column: 2/2; 
-background-color: #0080FF;
-}
 
-ul #chart-li-three {
-grid-column: 3/5; 
-background-color:#0080FF;
-}
-ul #chart-li-four {
-grid-column: 3/13; 
-background-color:#0080FF;
-}
-ul #chart-li-five {
-background-color:#0080FF;
-grid-column: 2/5; 
-}
    
    @media (min-width:1200px){
 
   } 
-  @media (min-width:992px) and (max-width:1199px){
-    
+  @media (max-width:1199px){
+    #container{
+      flex-direction: column;
+      
+    }
+    #panel{
+      font-size: 25px;
+    }
+    .submit{
+      font-size: 25px;
+    }
+    #panel-title{
+      margin-bottom: 5vh;
+    }
+    select{
+      font-size: 25px;
+    }
 } 
 @media (max-width:991px){
-  #container{
-    flex-direction: column;
-    
-  }
-  #panel{
-    font-size: 15px;
-  }
-  .submit{
-    font-size: 15px;
-  }
-  #panel-title{
-    margin-bottom: 2vh;
-  }
-  select{
-    font-size: 15px;
-  }
+  
   
 }
-/* @media (max-width:767px){
+@media (max-width:767px){
 
  
-} */
+}
 
 
 

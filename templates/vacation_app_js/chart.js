@@ -29,18 +29,20 @@ $(function(){
 
         
     })
- // removing datasets after a click
-    $("li").click(function(){
-        $(this).remove();
-        
-    })
-    //deleting new elements
-    
+ 
+
+    //removing last added element
     var diff = 0;
     $("#undo").click(function(){
         $("#chart-li-" + counter ).remove();
         counter = counter-1;
         
+    })
+    // removing all added elements
+    $("#clear").click(function(){
+        for(counter;counter>5;counter--){
+            $("#chart-li-" + counter ).remove();
+        }
     })
 })
 
