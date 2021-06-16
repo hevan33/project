@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie-edge">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="chart.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@200&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="chart.css">
+</head>
+<body>
+   <!-- seperates site into 2 parts  -->
+  <div id="container">
+
+    <div class="little-gap"></div>
+    <!-- the part with a chart -->
+  <div class="chart_container">
+    <!-- chart's title -->
+    <div id="title-container">
+      <div id="title">employee's vacation chart</div>
+    </div>
+    <!-- chart -->
+    <div id="chart">
+      <div class="chart_div">
+        <div class="chart-row chart-period">
+            <div class="chart-row-item"></div>
+            <span>06.01</span><span>06.07</span><span>06.13</span>
+            <span>06.19</span><span>06.25</span><span>07.01</span>
+            <span>07.07</span><span>07.13</span><span>07.19</span>
+            <span>07.25</span><span>07.31</span><span>08.06</span>
+        </div>
+        <div class="chart-row chart-lines">
+          <span></span><span></span><span></span>
+          <span></span><span></span><span></span>
+          <span></span><span></span><span></span>
+          <span></span><span></span><span></span>
+        </div>
+        <div class="chart-row">
+          <div class="chart-row-item">Z.K</div>
+          <ul class="chart-row-bars ZK ">
+            <li id="chart-li-one"></li>
+          </ul>
+        </div>
+        <div class="chart-row">
+          <div class="chart-row-item">K.N</div>
+          <ul class="chart-row-bars KN">
+            <li id="chart-li-two"></li>       
+          </ul>
+        </div>
+        <div class="chart-row">
+          <div class="chart-row-item">Z.B</div>
+          <ul class="chart-row-bars ZB">
+            <li id="chart-li-three"></li>
+          </ul>
+        </div>
+        <div class="chart-row">
+          <div class="chart-row-item">H.N</div>
+          <ul class="chart-row-bars HN">
+            <li id="chart-li-four"></li>
+          </ul>
+        </div>
+        <div class="chart-row">
+          <div class="chart-row-item">K.G</div>
+          <ul class="chart-row-bars KG">
+            <li id="chart-li-five"></li>
+          </ul>
+        </div>
+        
+  
+      </div>
+</div>
+    <!-- free space under the chart-->
+    <div class="little-gap">
+      
+
+
+    </div>
+    </div>
+    <div id="gap"></div>
+    <!-- the part with a panel -->
+    <div id="panel-container">
+      <!-- support div -->
+      <div id="panel-title-container">
+        <!-- panel's describe -->
+        <div id="panel-title">employee's vacation form</div>
+
+      </div>
+      <!-- panel -->
+      <div id="panel">
+        <div class="little-gap"></div>
+        <!-- selecting employee -->
+        <div id="employee-container">
+        <label for="employee">Select employee</label>
+        <select id="employee">
+          <option value="ZK">Zbigniew Kowalski</option>
+          <option value="KN">Krzysztof Nowak</option>
+          <option value="ZB">Zbigniew Brzeczek</option>
+          <option value="HN">Henryk Nocon</option>
+          <option value="KG">Katarzyna Grzechot</option>
+        </select>
+      </div>
+        <!-- selecting first day of vacation -->
+        <div id="first-day-container">
+        <label for="first-day">vacation since when</label>
+        <select id="first-day">
+          <option value="1">06.01</option>
+          <option value="2">06.07</option>
+          <option value="3">06.13</option>
+          <option value="4">06.19</option>
+          <option value="5">06.25</option>
+          <option value="6">07.01</option>
+          <option value="7">07.07</option>
+          <option value="8">07.13</option>
+          <option value="9">07.19</option>
+          <option value="10">07.25</option>
+          <option value="11">07.31</option>
+          <option value="12">08.06</option>
+          <option value="13">08.12</option>
+        </select>
+      </div>
+        <!-- choosing vacation's duration -->
+        <div id="days-container">
+        <label for="last-day">last day of the vacation</label>
+        <select id="last-day">
+          <option value="1">06.01</option>
+          <option value="2">06.07</option>
+          <option value="3">06.13</option>
+          <option value="4">06.19</option>
+          <option value="5">06.25</option>
+          <option value="6">07.01</option>
+          <option value="7">07.07</option>
+          <option value="8">07.13</option>
+          <option value="9">07.19</option>
+          <option value="10">07.25</option>
+          <option value="11">07.31</option>
+          <option value="12">08.06</option>
+          <option value="13">08.12</option>
+        </select>
+      </div>
+      <div id="button-container">
+        <button type = "button" id="insert" class="submit" >insert</button>
+        <button type = "button" id="undo" class="submit">undo</button>
+      </div>
+      </div>
+      <!-- support div -->
+      <div class="little-gap">
+
+      </div>
+
+
+    </div>
+    <div class="little-gap"></div>
+  </div>
+</body>
+</html>
