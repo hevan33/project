@@ -3,7 +3,7 @@
 
 // creating variables
 var employee, first, days, duration;
-var counter = 5;
+var counter = 0;
 $(function(){
     $("#insert").on("click",function(){ 
         // getting data from form
@@ -32,17 +32,39 @@ $(function(){
  
 
     //removing last added element
-    var diff = 0;
     $("#undo").click(function(){
-        $("#chart-li-" + counter ).remove();
-        counter = counter-1;
+        for(i=0;i<1;i){
+            if ( ($( "#chart-li-" + counter ).length)>0 ) {
+                $("#chart-li-" + counter ).remove();
+            counter = counter-1;
+            i = i +1;
+            }else{
+                counter = counter-1;
+                
+            }
+        }
+
+
+        
         
     })
     // removing all added elements
     $("#clear").click(function(){
-        for(counter;counter>5;counter--){
+        for(counter;counter>0;counter--){
             $("#chart-li-" + counter ).remove();
         }
     })
+    // removing row on click
+    $(".chart-row-bars").click(function(){
+        $(this).empty();
+        $(this).css("list-style","none")
+        $(this).css("display","grid")
+        $(this).css("padding","15px 0")
+        $(this).css("margin","0")
+        $(this).css("grid-template-columns","repeat(12, 1fr)")
+        $(this).css("grid-gap","10px 0")
+        $(this).css("border-bottom","1px solid #000")
+    })
 })
+
 

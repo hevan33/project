@@ -40,7 +40,7 @@ body{
   text-align: center;
 }
 #title-container #title{
-  font-size: 5vh;
+  font-size: 30px;
   text-align: center;
   margin-top: 6vh;
 }
@@ -59,7 +59,7 @@ body{
   flex: 1;
 }
 #panel-title{
-  font-size: 5vh;
+  font-size: 30px;
   text-align: center;
   margin-top: 6vh;
 }
@@ -196,17 +196,22 @@ border-radius: 15px;
       
     }
     #panel{
-      font-size: 25px;
+      font-size: 18px;
     }
     .submit{
-      font-size: 25px;
+      font-size: 18px;
     }
     #panel-title{
-      margin-bottom: 5vh;
+      margin-bottom: 2vh;
     }
     select{
-      font-size: 25px;
+      font-size: 18px;
     }
+    #panel{
+      width: 99%;
+      margin: auto;
+    }
+    
 } 
 @media (max-width:991px){
   
