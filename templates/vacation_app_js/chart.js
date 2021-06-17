@@ -34,10 +34,13 @@ $(function(){
     //removing last added element
     $("#undo").click(function(){
         for(i=0;i<1;i){
+            //checking if element exists
             if ( ($( "#chart-li-" + counter ).length)>0 ) {
+                // if yes, removing it
                 $("#chart-li-" + counter ).remove();
             counter = counter-1;
             i = i +1;
+            // if no, chcecking another possibility 
             }else{
                 counter = counter-1;
                 
@@ -54,7 +57,7 @@ $(function(){
             $("#chart-li-" + counter ).remove();
         }
     })
-    // removing row on click
+    // removing row's elements on click
     $(".chart-row-bars").click(function(){
         $(this).empty();
         $(this).css("list-style","none")
