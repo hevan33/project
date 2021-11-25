@@ -2,4 +2,4 @@
 1. Download Symfony and Composer
 2. Set up your project 
 3. Clone repository to your project
-4. Go to /localhost/vacation_app
+4. Go to /localhost/(your_project_name)
