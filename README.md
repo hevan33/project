@@ -1,4 +1,4 @@
-# What it's doing?
+# What is it doing?
 The project shows panel on the right side and gantt's chart on the left side. User can add, delete and manipulate chart's bars
 # How to use 
 1. Download Symfony and Composer
